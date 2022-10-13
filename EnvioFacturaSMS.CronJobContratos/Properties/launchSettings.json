@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EnvioFacturaSMS.CronJobContratos": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

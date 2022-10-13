@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>90502715-0995-4e72-88c6-2a2710c0f4f8</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.22" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="SolidStateOps.Startup.Swagger" Version="4.2.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EnvioFacturaSMS.Applications\EnvioFacturaSMS.Applications.csproj" />
+    <ProjectReference Include="..\EnvioFacturaSMS.Domain\EnvioFacturaSMS.Domain.csproj" />
+    <ProjectReference Include="..\EnvioFacturaSMS.Infraestructure\EnvioFacturaSMS.Infraestructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

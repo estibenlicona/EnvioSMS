@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  enviofacturasms.api:
+    image: ${DOCKER_REGISTRY-}enviofacturasmsapi
+    build:
+      context: .
+      dockerfile: EnvioFacturaSMS.Api/Dockerfile
+
+  enviofacturasms.workersms:
+    image: ${DOCKER_REGISTRY-}enviofacturasmsworkersms
+    build:
+      context: .
+      dockerfile: EnvioFacturaSMS.ConceptsTest/Dockerfile
+
